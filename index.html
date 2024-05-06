@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мүшел жас калькуляторы</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="likely.js"></script>
+    <link rel="stylesheet" href="likely.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Мүшел жас калькуляторы</h1>
+    </header>
+    <div class="container">
+      <div class="center">
+        <form id="ageForm">
+          <label for="birthYearInput">Туған жылыңыз?</label>
+          <input
+            type="text"
+            id="birthYearInput"
+            placeholder="Мысалы, 1988"
+            pattern="[0-9]*"
+          />
+          <button type="submit" id="calculateButton">Есепте</button>
+        </form>
+        <div id="resultContainer" class="hidden"></div>
+      </div>
+    </div>
+    <div class="likely" data-url="https://k.yeldar.org/ms">
+      <div class="twitter">Бөлісу</div>
+      <div class="facebook">Бөлісу</div>
+      <div class="linkedin">Бөлісу</div>
+      <div class="telegram">Бөлісу</div>
+      <div class="whatsapp">Бөлісу</div>
+    </div>
+    <p class="purl">
+      Осы беттің тұрақты, қысқа сілтемесі: https://k.yeldar.org/ms
+    </p>
+    <footer>
+      <p>
+        &copy; 2024
+        <a href="https://yeldar.org" target="_blank">Елдар Құдайбергенов</a>
+      </p>
+    </footer>
+    <script src="mushel-jas.js"></script>
+  </body>
+</html>
