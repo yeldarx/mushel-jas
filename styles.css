@@ -91,3 +91,21 @@ a:hover {
 .likely {
     margin-top: 30px;
 }
+
+.faq {
+    margin-top: 40px;
+    width: 400px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question-text {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.answer {
+    display: none;
+}

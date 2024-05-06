@@ -78,3 +78,14 @@ document.getElementById('ageForm').addEventListener('submit', function(event) {
     resultContainer.innerHTML = result;
     resultContainer.classList.remove('hidden');
 });
+
+document.querySelectorAll('.question-text').forEach(question => {
+    question.addEventListener('click', function() {
+        const answer = this.nextElementSibling;
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    });
+});
