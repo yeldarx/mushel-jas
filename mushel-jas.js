@@ -89,3 +89,5 @@ document.querySelectorAll('.question-text').forEach(question => {
         }
     });
 });
+
+document.getElementById('currentYear').textContent = new Date().getFullYear();
