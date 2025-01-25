@@ -23,7 +23,7 @@ document.getElementById('ageForm').addEventListener('submit', function(event) {
     if (isNaN(age)) {
         result = 'Жарамды дерек енгізуіңізді сұраймыз!';
     } else if (age < 13 || age > 122) {
-        result = `Егер адам ${birth_year} жылы туылса, ол «ер жете бастау» деп аталатын, бірінші мүшеліне ${birth_year + 13} жылы 13-ке толғанда кіреді де,<br><br>${birth_year + 14} жылы 14-ке толғанда шығады.`;
+        result = `Егер адам ${birth_year} жылы туылса, ол «ер жете бастау» деп аталатын, бірінші мүшеліне ${birth_year + 13} жылы 13-ке толғанда кіреді.`;
     } else if (age == 13) {
         num = 'бірінші';
         mushel_age = 13;
@@ -67,10 +67,10 @@ document.getElementById('ageForm').addEventListener('submit', function(event) {
     }
     
     if (age == mushel_age) {
-        result = `Қазір сіз ${age} жастасыз.<br><br>Бұл сіздің ${num} мүшеліңіз, ол «${mushel_name}» деп аталады.<br><br>${current_year + ((mushel_age + 1) - age)} жылы ${mushel_age + 1} жасқа толғанда шығасыз.`
+        result = `Қазір сіз ${age} жастасыз.<br><br>Бұл сіздің ${num} мүшеліңіз, ол «${mushel_name}» деп аталады.`
 
     } else if (age > (mushel_age - 12) && age < mushel_age) {
-        result = `Сіз ${mushel_age - age} жылдан кейін, ${current_year + (mushel_age - age)} жылы ${mushel_age} жасқа толғанда<br><br> «${mushel_name}» деп аталатын ${num} мүшеліңізге кіріп,<br><br>${current_year + ((mushel_age + 1) - age)} жылы ${mushel_age + 1} жасыңызда шығасыз.
+        result = `Сіз ${mushel_age - age} жылдан кейін, ${current_year + (mushel_age - age)} жылы ${mushel_age} жасқа толғанда<br><br> «${mushel_name}» деп аталатын ${num} мүшеліңізге кіресіз.
         `
     }
 
